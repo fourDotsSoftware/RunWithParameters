@@ -1,0 +1,36 @@
+// RunWithParametersExt.idl : IDL source for RunWithParametersExt
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (RunWithParametersExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	//uuid(39809273-18E9-4058-86C6-49BF635BD36E),
+	uuid(B6464AA1-28BB-42a9-B67B-59A8E5AE27C0),
+	helpstring("IRunWithParametersShellExt Interface"),
+	pointer_default(unique)
+]
+interface IRunWithParametersShellExt : IUnknown{
+};
+[
+	//uuid(43F35A7B-DC07-4455-AD7F-FFE2D55EF97A),
+	uuid(E45642A4-ABDC-48ab-A458-95E756ED7149),
+	version(1.0),
+	helpstring("RunWithParametersExt 1.0 Type Library")
+]
+library RunWithParametersExtLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(AA6347ED-CD79-40f0-88EB-BA54125B9E81),
+		helpstring("RunWithParametersShellExt Class")
+	]
+	coclass RunWithParametersShellExt
+	{
+		[default] interface IRunWithParametersShellExt;
+	};
+};

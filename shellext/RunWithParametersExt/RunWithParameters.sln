@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RunWithParametersExt", "RunWithParametersExt\RunWithParametersExt.vcproj", "{32F6E365-6B9E-4DE1-AD74-819278544255}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RunWithParametersExtPS", "RunWithParametersExt\RunWithParametersExtPS.vcproj", "{BC48816F-3D51-4FFD-9E1C-FD1D375D5ABD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32F6E365-6B9E-4DE1-AD74-819278544255} = {32F6E365-6B9E-4DE1-AD74-819278544255}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32F6E365-6B9E-4DE1-AD74-819278544255}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32F6E365-6B9E-4DE1-AD74-819278544255}.Debug|Win32.Build.0 = Debug|Win32
+		{32F6E365-6B9E-4DE1-AD74-819278544255}.Release|Win32.ActiveCfg = Release|Win32
+		{32F6E365-6B9E-4DE1-AD74-819278544255}.Release|Win32.Build.0 = Release|Win32
+		{BC48816F-3D51-4FFD-9E1C-FD1D375D5ABD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC48816F-3D51-4FFD-9E1C-FD1D375D5ABD}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

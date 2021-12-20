@@ -1,0 +1,35 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {AA6347ED-CD79-40f0-88EB-BA54125B9E81} = s 'RunWithParametersShellExt Class'
+		{			
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}			
+		}
+	}
+		
+	NoRemove *
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove RunWithParameters = s '{AA6347ED-CD79-40f0-88EB-BA54125B9E81}'
+            }
+        }
+    }
+    
+    NoRemove Folder
+    {
+        NoRemove ShellEx
+        {
+            NoRemove ContextMenuHandlers
+            {
+                ForceRemove RunWithParameters = s '{AA6347ED-CD79-40f0-88EB-BA54125B9E81}'
+            }
+        }
+    }
+}
